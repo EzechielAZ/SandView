@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Unzip file
-        run: unzip yourfile.zip -d ./unzipped
+        run: unzip acadi_b_nin_by_softblossom13597497.zip -d ./unzipped
