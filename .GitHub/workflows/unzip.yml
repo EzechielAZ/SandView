@@ -1,0 +1,14 @@
+name: Unzip File
+
+on:
+  push:
+    paths:
+      - '**.zip'  # Déclenche le workflow uniquement si un .zip est modifié ou ajouté
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Unzip file
+        run: unzip yourfile.zip -d ./unzipped
